@@ -10,7 +10,7 @@
 
 function threeFruits () {
   const fruits = ['Apple', 'Banana', 'Cherry']
-
+return(fruits);
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -19,7 +19,7 @@ function threeFruits () {
 
 function multipleTypes () {
   const diverseArray = ['Skateboard', null, 8.75, 'Eiffel Tower', 44, 7, true, null]
-
+return (diverseArray);
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,6 +30,7 @@ function multipleTypes () {
 
 function indexAccess () {
   const people = ['Jenny', 'James', 'Jimmy', 'Jonny', 'Julia', 'Jessica']
+return (people[2]);
 
   // console.assert() allows you to declare things that should be true; it's like
   // a sanity-check for your code.
@@ -39,7 +40,7 @@ function indexAccess () {
   console.assert(people[4] === 'Julia')
 
   // return the third item from the "people" array here
-
+console.assert(people[2] === 'Jimmy');
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,7 +49,7 @@ function indexAccess () {
 
 function useLength () {
   const arr = ['a', 'b', 'c']
-
+return(arr.length);
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,8 +57,9 @@ function useLength () {
 // Add the string "d" to the array below and return the array.
 
 function usePush () {
-  let arr = ['a', 'b', 'c']
-
+let arr = ['a', 'b', 'c']
+arr.push ('d');
+return(arr);
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,7 +68,8 @@ function usePush () {
 
 function usePop () {
   let arr = ['a', 'b', 'c']
-
+arr.pop ('c');
+return(arr);
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,7 +80,7 @@ function usePop () {
 
 function useIndexOf () {
   let arr = ['C', 'A', 'G', 'T', 'A', 'A', 'G', 'T']
-
+return (arr.indexOf ('T'));
   // some demonstration of how .indexOf() works:
   console.assert(arr.indexOf('C') === 0)
   console.assert(arr.indexOf('A') === 1) // note this only returns the *first* instance of 'A'
@@ -93,7 +96,7 @@ function useIndexOf () {
 
 function useJoin () {
   const arr = ['a', 'b', 'c', 'd', 'e', 'f']
-
+return(arr.join('-'));
   // some examples of .join():
   console.assert(arr.join() === 'a,b,c,d,e,f') // joins using a comma by default
   console.assert(arr.join('ZZZ') === 'aZZZbZZZcZZZdZZZeZZZf')
